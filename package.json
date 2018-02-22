@@ -1,0 +1,24 @@
+{
+  "name": "tend-smart-contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TendTechnologies/smart-contracts.git",
+  "author": "David Perrenoud <david.perrenoud@ti8m.ch>",
+  "license": "Apache-2",
+  "engines": {
+    "node": ">=9.5.0"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "coverage": "solidity-coverage",
+    "lint": "solium -d contracts",
+    "migrate": "yarn migrate",
+    "test": "truffle test --network in_memory"
+  },
+  "devDependencies": {
+    "ganache-cli": "6.0.3",
+    "solidity-coverage": "0.4.9",
+    "solium": "1.1.5",
+    "truffle": "4.0.6"
+  }
+}
