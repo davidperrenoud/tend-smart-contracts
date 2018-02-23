@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "git@github.com:TendTechnologies/smart-contracts.git",
   "author": "David Perrenoud <david.perrenoud@ti8m.ch>",
-  "license": "Apache-2",
+  "license": "Apache-2.0",
   "engines": {
     "node": ">=9.5.0"
   },
