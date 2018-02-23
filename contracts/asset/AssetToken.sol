@@ -42,15 +42,13 @@ contract AssetToken is ConfirmableToken {
      * @param _who The address to check for verification.
      */
     modifier onlyCertified(address _who) {
-        if (!tendCertifierContract.certified(_who)) {
-            return;
-        }
+        require(tendCertifierContract.certified(_who));
         _;
     }
 
     /// Constructor.
     function AssetToken(TendCertifier _tendCertifierContract, uint256 _totalSupply, address tokenHolder) public {
-        tendCertifierContract = TendCertifier(_tendCertifierContract);
+        tendCertifierContract = _tendCertifierContract;
         totalSupply = _totalSupply;
         balances[tokenHolder] = _totalSupply;
     }
@@ -68,17 +66,6 @@ contract AssetToken is ConfirmableToken {
         require(_index < experienceTokenContracts.length);
 
         delete experienceTokenContracts[_index];
-        return true;
-    }
-
-    /// Distribute the experience tokens based on the amount of asset tokens each user has.
-    function distributeExperienceTokens(uint256 _index, address _user) public onlyOwner returns (bool) {
-        require(_user != address(0));
-        require(_index < experienceTokenContracts.length);
-        require(experienceTokenContracts[_index].balanceOf(_user) == 0);
-
-        // Give the same amount of experience tokens to this user, as the amount of asset tokens she has
-        experienceTokenContracts[_index].transfer(_user, balances[_user]);
         return true;
     }
 }

@@ -39,9 +39,7 @@ contract ExperienceToken is ConfirmableToken {
      * @param _who The address to check for verification.
      */
     modifier onlyCertified(address _who) {
-        if (!tendCertifierContract.certified(_who) || !experienceCertifierContract.certified(_who)) {
-            return;
-        }
+        require(tendCertifierContract.certified(_who) && experienceCertifierContract.certified(_who));
         _;
     }
 
