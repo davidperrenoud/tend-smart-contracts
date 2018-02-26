@@ -12,7 +12,7 @@
     "compile": "truffle compile",
     "coverage": "solidity-coverage",
     "lint": "solium -d contracts",
-    "migrate": "yarn migrate",
+    "migrate": "truffle migrate",
     "test": "truffle test --network in_memory"
   },
   "devDependencies": {
