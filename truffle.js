@@ -1,4 +1,9 @@
+const HDWalletProvider = require("truffle-hdwallet-provider")
 const ganache = require("ganache-cli")
+const fs = require("fs")
+
+const mnemonic = fs.readFileSync("./seed", "utf8").trim()
+const withMnemonic = rpcUrl => new HDWalletProvider(mnemonic, rpcUrl)
 
 module.exports = {
   networks: {
@@ -12,7 +17,7 @@ module.exports = {
       network_id: "*",
     },
     rinkeby: {
-      provider: "https://rinkeby.infura.io/",
+      provider: withMnemonic("https://rinkeby.infura.io/"),
       network_id: 4,
     },
   },
