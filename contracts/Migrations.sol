@@ -20,14 +20,14 @@ import "./base/Ownable.sol";
 
 
 contract Migrations is Ownable {
-    uint256 public lastCompletedMigration;
+    uint256 public last_completed_migration;
 
     function setCompleted(uint256 completed) onlyOwner public {
-        lastCompletedMigration = completed;
+        last_completed_migration = completed;
     }
 
     function upgrade(address newAddress) onlyOwner public {
         Migrations upgraded = Migrations(newAddress);
-        upgraded.setCompleted(lastCompletedMigration);
+        upgraded.setCompleted(last_completed_migration);
     }
 }
