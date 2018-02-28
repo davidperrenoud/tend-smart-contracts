@@ -17,8 +17,11 @@ module.exports = {
       network_id: "*",
     },
     rinkeby: {
-      provider: withMnemonic("https://rinkeby.infura.io/"),
+      get provider() {
+        return withMnemonic("https://rinkeby.infura.io/")
+      },
       network_id: 4,
+      from: "0x65882eb263d60ada260df66ee960177b3569d0bb",
     },
   },
 }
