@@ -15,7 +15,7 @@ jobs:
           paths: ~/.cache/yarn
       - run:
           name: Test
-          command: yarn
+          command: yarn test
 workflows:
   version: 2
   test:
