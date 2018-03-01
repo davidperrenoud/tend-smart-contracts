@@ -23,6 +23,8 @@ Please read [our TEND whitepaper](https://www.tend.swiss/files/TEND-white_paper-
 |AssetToken001|[0x8ea631ee9d6a94777a2f33428bb196434690b1ba](https://rinkeby.etherscan.io/token/0x8ea631ee9d6a94777a2f33428bb196434690b1ba)|
 |ExperienceToken001|[0x7e6a3f87111bb5112cc8115cc6887fbf999b789a](https://rinkeby.etherscan.io/token/0x7e6a3f87111bb5112cc8115cc6887fbf999b789a)|
 |ExperienceCertifier001|[0x600cb6223935429a866405e2f63859f344c0105c](https://rinkeby.etherscan.io/address/0x600cb6223935429a866405e2f63859f344c0105c)|
+|ExperienceToken002|[0x62134A7Fe630a09bBE0d090b77f824a7E2fC2682](https://rinkeby.etherscan.io/token/0x62134A7Fe630a09bBE0d090b77f824a7E2fC2682)|
+|ExperienceCertifier002|[0xDB25C0A3cE2C86d93c77020440b1Ae9D4CA2b88d](https://rinkeby.etherscan.io/token/0xDB25C0A3cE2C86d93c77020440b1Ae9D4CA2b88d)|
 
 ## Testing the contracts
 
