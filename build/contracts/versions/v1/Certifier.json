@@ -1,0 +1,290 @@
+{
+  "contractName": "Certifier",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "who",
+          "type": "address"
+        }
+      ],
+      "name": "Confirmed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "who",
+          "type": "address"
+        }
+      ],
+      "name": "Revoked",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_who",
+          "type": "address"
+        }
+      ],
+      "name": "certified",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "//! Certifier contract, taken from ethcore/sms-verification\n//!\n//! Copyright 2016 Gavin Wood, Parity Technologies Ltd.\n//!\n//! Licensed under the Apache License, Version 2.0 (the \"License\");\n//! you may not use this file except in compliance with the License.\n//! You may obtain a copy of the License at\n//!\n//!     http://www.apache.org/licenses/LICENSE-2.0\n//!\n//! Unless required by applicable law or agreed to in writing, software\n//! distributed under the License is distributed on an \"AS IS\" BASIS,\n//! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n//! See the License for the specific language governing permissions and\n//! limitations under the License.\n\npragma solidity ^0.4.19;\n\ncontract Certifier {\n    event Confirmed(address indexed who);\n    event Revoked(address indexed who);\n\n    function certified(address _who) public view returns (bool);\n}\n",
+  "sourcePath": "/Users/pea/tend/smart-contracts/contracts/base/Certifier.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/pea/tend/smart-contracts/contracts/base/Certifier.sol",
+      "exportedSymbols": {
+        "Certifier": [
+          736
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".19"
+          ]
+        },
+        "id": 720,
+        "name": "PragmaDirective",
+        "src": "691:24:10"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            736
+          ],
+          "name": "Certifier",
+          "scope": 737
+        },
+        "children": [
+          {
+            "attributes": {
+              "anonymous": false,
+              "name": "Confirmed"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": true,
+                      "name": "who",
+                      "scope": 724,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 721,
+                        "name": "ElementaryTypeName",
+                        "src": "758:7:10"
+                      }
+                    ],
+                    "id": 722,
+                    "name": "VariableDeclaration",
+                    "src": "758:19:10"
+                  }
+                ],
+                "id": 723,
+                "name": "ParameterList",
+                "src": "757:21:10"
+              }
+            ],
+            "id": 724,
+            "name": "EventDefinition",
+            "src": "742:37:10"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "name": "Revoked"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": true,
+                      "name": "who",
+                      "scope": 728,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 725,
+                        "name": "ElementaryTypeName",
+                        "src": "798:7:10"
+                      }
+                    ],
+                    "id": 726,
+                    "name": "VariableDeclaration",
+                    "src": "798:19:10"
+                  }
+                ],
+                "id": 727,
+                "name": "ParameterList",
+                "src": "797:21:10"
+              }
+            ],
+            "id": 728,
+            "name": "EventDefinition",
+            "src": "784:35:10"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": true,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "certified",
+              "payable": false,
+              "scope": 736,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_who",
+                      "scope": 735,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 729,
+                        "name": "ElementaryTypeName",
+                        "src": "844:7:10"
+                      }
+                    ],
+                    "id": 730,
+                    "name": "VariableDeclaration",
+                    "src": "844:12:10"
+                  }
+                ],
+                "id": 731,
+                "name": "ParameterList",
+                "src": "843:14:10"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 735,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 732,
+                        "name": "ElementaryTypeName",
+                        "src": "879:4:10"
+                      }
+                    ],
+                    "id": 733,
+                    "name": "VariableDeclaration",
+                    "src": "879:4:10"
+                  }
+                ],
+                "id": 734,
+                "name": "ParameterList",
+                "src": "878:6:10"
+              }
+            ],
+            "id": 735,
+            "name": "FunctionDefinition",
+            "src": "825:60:10"
+          }
+        ],
+        "id": 736,
+        "name": "ContractDefinition",
+        "src": "717:170:10"
+      }
+    ],
+    "id": 737,
+    "name": "SourceUnit",
+    "src": "691:197:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-03-01T13:17:33.416Z"
+}
