@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/node:9.6.1
+    environment:
+      PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Update yarn
+          command: yarn
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths: ~/.cache/yarn
+      - run:
+          name: Test
+          command: yarn
