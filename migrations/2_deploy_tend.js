@@ -1,5 +1,5 @@
-const TendAssets = artifacts.require("./TendAssets.sol")
-const TendCertifier = artifacts.require("./TendCertifier.sol")
+const TendAssets = artifacts.require("TendAssets")
+const TendCertifier = artifacts.require("TendCertifier")
 
 module.exports = (deployer, network, accounts) => {
   deployer.deploy(TendAssets)

@@ -28,9 +28,7 @@ contract AssetToken is ConfirmableToken {
     /// The experience token contracts related to this asset token.
     ExperienceToken[] public experienceTokenContracts;
 
-    // Helper constants
-    string public constant name = "Asset Name";
-    string public constant symbol = "SYM";
+    /// The asset is non-divisible.
     uint8 public constant decimals = 0;
 
     function getExperienceTokenContractsLength() public view returns(uint256 length) {
@@ -44,13 +42,6 @@ contract AssetToken is ConfirmableToken {
     modifier onlyCertified(address _who) {
         require(tendCertifierContract.certified(_who));
         _;
-    }
-
-    /// Constructor.
-    function AssetToken(TendCertifier _tendCertifierContract, uint256 _totalSupply, address tokenHolder) public {
-        tendCertifierContract = _tendCertifierContract;
-        totalSupply = _totalSupply;
-        balances[tokenHolder] = _totalSupply;
     }
 
     /// Add an experience token contract to this asset token.

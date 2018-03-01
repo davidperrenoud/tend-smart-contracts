@@ -1,11 +1,16 @@
 const assertRevert = require("../helpers/assertRevert")
 
 const TendCertifier = artifacts.require("TendCertifier")
-const AssetToken = artifacts.require("AssetToken")
-const ExperienceToken = artifacts.require("ExperienceToken")
-const ExperienceCertifier = artifacts.require("ExperienceCertifier")
+const AssetToken001 = artifacts.require("AssetToken001")
+const ExperienceToken001 = artifacts.require("ExperienceToken001")
+const ExperienceCertifier001 = artifacts.require("ExperienceCertifier001")
 
-contract("ExperienceToken", async accounts => {
+// Aliases for simplicity
+const AssetToken = AssetToken001
+const ExperienceToken = ExperienceToken001
+const ExperienceCertifier = ExperienceCertifier001
+
+contract("ExperienceToken001", async accounts => {
   const admin = accounts[0]
   const user1 = accounts[1]
   const user2 = accounts[2]

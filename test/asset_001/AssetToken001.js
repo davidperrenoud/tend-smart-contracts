@@ -2,9 +2,9 @@ const assertRevert = require("../helpers/assertRevert")
 
 const TendAssets = artifacts.require("TendAssets")
 const TendCertifier = artifacts.require("TendCertifier")
-const AssetToken = artifacts.require("AssetToken")
+const AssetToken = artifacts.require("AssetToken001")
 
-contract("AssetToken", async accounts => {
+contract("AssetToken001", async accounts => {
   const admin = accounts[0]
   const user1 = accounts[1]
   const user2 = accounts[2]

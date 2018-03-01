@@ -29,9 +29,7 @@ contract ExperienceToken is ConfirmableToken {
     /// The experience certifier allowing to use the experience token.
     ExperienceCertifier public experienceCertifierContract;
 
-    // Helper constants
-    string public constant name = "Experience Name";
-    string public constant symbol = "SYM";
+    /// The experience is non-divisible.
     uint8 public constant decimals = 0;
 
     /**
@@ -41,13 +39,5 @@ contract ExperienceToken is ConfirmableToken {
     modifier onlyCertified(address _who) {
         require(tendCertifierContract.certified(_who) && experienceCertifierContract.certified(_who));
         _;
-    }
-
-    /// Constructor.
-    function ExperienceToken(TendCertifier _tendCertifierContract, ExperienceCertifier _experienceCertifierContract, uint256 _totalSupply, address tokenHolder) public {
-        tendCertifierContract = _tendCertifierContract;
-        experienceCertifierContract = _experienceCertifierContract;
-        totalSupply = _totalSupply;
-        balances[tokenHolder] = _totalSupply;
     }
 }

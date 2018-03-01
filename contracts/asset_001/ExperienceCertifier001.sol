@@ -1,4 +1,4 @@
-//! ExperienceCertifier contract
+//! ExperienceCertifier001 contract
 //!
 //! Copyright 2018 David Perrenoud, ti&m AG
 //!
@@ -16,7 +16,9 @@
 
 pragma solidity ^0.4.19;
 
-import "../base/SimpleCertifier.sol";
+import "../asset/ExperienceCertifier.sol";
 
 
-contract ExperienceCertifier is SimpleCertifier {}
+contract ExperienceCertifier001 is ExperienceCertifier {
+    function ExperienceCertifier001() public {}
+}

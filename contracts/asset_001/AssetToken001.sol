@@ -1,4 +1,4 @@
-//! ExperienceCertifier contract
+//! AssetToken001 contract
 //!
 //! Copyright 2018 David Perrenoud, ti&m AG
 //!
@@ -16,7 +16,16 @@
 
 pragma solidity ^0.4.19;
 
-import "../base/SimpleCertifier.sol";
+import "../asset/AssetToken.sol";
 
 
-contract ExperienceCertifier is SimpleCertifier {}
+contract AssetToken001 is AssetToken {
+    string public constant name = "001 Porsche 356 A";
+    string public constant symbol = "CAR001";
+
+    function AssetToken001(TendCertifier _tendCertifierContract) public {
+        tendCertifierContract = _tendCertifierContract;
+        totalSupply = 10;
+        balances[msg.sender] = totalSupply;
+    }
+}

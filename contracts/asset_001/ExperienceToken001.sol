@@ -1,4 +1,4 @@
-//! ExperienceCertifier contract
+//! ExperienceToken001 contract
 //!
 //! Copyright 2018 David Perrenoud, ti&m AG
 //!
@@ -16,7 +16,18 @@
 
 pragma solidity ^0.4.19;
 
-import "../base/SimpleCertifier.sol";
+import "../asset/ExperienceToken.sol";
 
 
-contract ExperienceCertifier is SimpleCertifier {}
+contract ExperienceToken001 is ExperienceToken {
+    string public constant name = "001 One Day Private Drive";
+    string public constant symbol = "CAR001E";
+
+    /// Constructor.
+    function ExperienceToken001(TendCertifier _tendCertifierContract, ExperienceCertifier _experienceCertifierContract) public {
+        tendCertifierContract = _tendCertifierContract;
+        experienceCertifierContract = _experienceCertifierContract;
+        totalSupply = 10;
+        balances[msg.sender] = totalSupply;
+    }
+}
