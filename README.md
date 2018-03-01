@@ -8,7 +8,7 @@ Please read [our TEND whitepaper](https://www.tend.swiss/files/TEND-white_paper-
 
 ### Mainnet (id: 1)
 |Contract|Address|
-| --|--|
+|--|--|
 |TendAssets||
 |TendCertifier||
 |AssetToken001||
@@ -17,11 +17,11 @@ Please read [our TEND whitepaper](https://www.tend.swiss/files/TEND-white_paper-
 
 ### Rinkeby testnet (id: 4)
 |Contract|Address|
-| --|--|
+|--|--|
 |TendAssets|[0x039e2ea39e615f25f4776f187e3c4a2afe6be9d8](https://rinkeby.etherscan.io/address/0x039e2ea39e615f25f4776f187e3c4a2afe6be9d8)|
 |TendCertifier|[0x3d8a01145bfc0134627a0d8f8c8b37cb77006416](https://rinkeby.etherscan.io/address/0x3d8a01145bfc0134627a0d8f8c8b37cb77006416)|
-|AssetToken001|[0x8ea631ee9d6a94777a2f33428bb196434690b1ba](https://rinkeby.etherscan.io/address/0x8ea631ee9d6a94777a2f33428bb196434690b1ba)|
-|ExperienceToken001|[0x7e6a3f87111bb5112cc8115cc6887fbf999b789a](https://rinkeby.etherscan.io/address/0x7e6a3f87111bb5112cc8115cc6887fbf999b789a)|
+|AssetToken001|[0x8ea631ee9d6a94777a2f33428bb196434690b1ba](https://rinkeby.etherscan.io/token/0x8ea631ee9d6a94777a2f33428bb196434690b1ba)|
+|ExperienceToken001|[0x7e6a3f87111bb5112cc8115cc6887fbf999b789a](https://rinkeby.etherscan.io/token/0x7e6a3f87111bb5112cc8115cc6887fbf999b789a)|
 |ExperienceCertifier001|[0x600cb6223935429a866405e2f63859f344c0105c](https://rinkeby.etherscan.io/address/0x600cb6223935429a866405e2f63859f344c0105c)|
 
 ## Testing the contracts
