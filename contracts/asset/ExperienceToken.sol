@@ -1,6 +1,6 @@
 //! ExperienceToken contract
 //!
-//! Copyright 2018 David Perrenoud, ti&m AG
+//! Copyright 2018 Marco Abele, TEND Technologies
 //!
 //! Licensed under the Apache License, Version 2.0 (the "License");
 //! you may not use this file except in compliance with the License.
