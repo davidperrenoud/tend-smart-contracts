@@ -12,8 +12,11 @@ Please read [our TEND whitepaper](https://www.tend.swiss/files/TEND-white_paper-
 |TendAssets||
 |TendCertifier||
 |AssetToken001||
-|ExperienceToken001||
 |ExperienceCertifier001||
+|ExperienceToken001||
+|AssetToken002||
+|ExperienceCertifier002||
+|ExperienceToken002||
 
 ### Rinkeby testnet (id: 4)
 |Contract|Address|
