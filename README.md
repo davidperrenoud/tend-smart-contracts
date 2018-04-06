@@ -17,6 +17,15 @@ Please read [our TEND whitepaper](https://www.tend.swiss/files/TEND-white_paper-
 |AssetToken002||
 |ExperienceCertifier002||
 |ExperienceToken002||
+|AssetToken003||
+|ExperienceCertifier003||
+|ExperienceToken003||
+|AssetToken004||
+|ExperienceCertifier004||
+|ExperienceToken004||
+|AssetToken005||
+|ExperienceCertifier005||
+|ExperienceToken005||
 
 ### Rinkeby testnet (id: 4)
 |Contract|Address|
@@ -29,6 +38,15 @@ Please read [our TEND whitepaper](https://www.tend.swiss/files/TEND-white_paper-
 |AssetToken002|[0x62134A7Fe630a09bBE0d090b77f824a7E2fC2682](https://rinkeby.etherscan.io/token/0x62134A7Fe630a09bBE0d090b77f824a7E2fC2682)|
 |ExperienceCertifier002|[0xDB25C0A3cE2C86d93c77020440b1Ae9D4CA2b88d](https://rinkeby.etherscan.io/address/0xDB25C0A3cE2C86d93c77020440b1Ae9D4CA2b88d)|
 |ExperienceToken002|[0x017505F068Ef20a9e312Ef64E9EB8C3cAf0F7295](https://rinkeby.etherscan.io/token/0x017505F068Ef20a9e312Ef64E9EB8C3cAf0F7295)|
+|AssetToken003|[0x1e7514afe51eaf81cfeec6636a5baf84a325d92b](https://rinkeby.etherscan.io/token/0x1e7514afe51eaf81cfeec6636a5baf84a325d92b)|
+|ExperienceCertifier003|[0x896b866d03d67ca6f0a841a254a59f7befb4d920](https://rinkeby.etherscan.io/address/0x896b866d03d67ca6f0a841a254a59f7befb4d920)|
+|ExperienceToken003|[0xa0aa203b266e186cc2d50eb60c03f88aad1ccabf](https://rinkeby.etherscan.io/token/0xa0aa203b266e186cc2d50eb60c03f88aad1ccabf)|
+|AssetToken004|[0x5ece4f1b974dd6959abbbd7291b397816fdbb962](https://rinkeby.etherscan.io/token/0x5ece4f1b974dd6959abbbd7291b397816fdbb962)|
+|ExperienceCertifier004|[0x2f89fd06671183b15fa11aba50d67d58ae96ae76](https://rinkeby.etherscan.io/address/0x2f89fd06671183b15fa11aba50d67d58ae96ae76)|
+|ExperienceToken004|[0xcfe6e9f3ee4ca5b9a548f686c7bd1bebc00d10c7](https://rinkeby.etherscan.io/token/0xcfe6e9f3ee4ca5b9a548f686c7bd1bebc00d10c7)|
+|AssetToken005|[0xef9b48340e1e45999866f03b27236a2a909e612e](https://rinkeby.etherscan.io/token/0xef9b48340e1e45999866f03b27236a2a909e612e)|
+|ExperienceCertifier005|[0x350b09077d85a2d0675219774cb0d49ac75b3dd8](https://rinkeby.etherscan.io/address/0x350b09077d85a2d0675219774cb0d49ac75b3dd8)|
+|ExperienceToken005|[0x7f4f40c65f8fc6184d523c95f38668db50ce3af8](https://rinkeby.etherscan.io/token/0x7f4f40c65f8fc6184d523c95f38668db50ce3af8)|
 
 ## Testing the contracts
 
